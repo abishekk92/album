@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Valentine's Day across the Globe</title>
+</head>
+<body>
+<%= @valentines_day.each do |photo| %>
+<img src="<%= photo.images.thumbnail.url %>"/>
+<%= end %>
+</body>
+</html>
+
