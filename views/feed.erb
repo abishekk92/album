@@ -1,12 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+</script>>
+<script type="text/javascript" src="../public/javascripts/turn.js">
+</script>
 <title>Valentine's Day across the Globe</title>
 </head>
 <body>
+<div id="album">
 <%= @valentines_day.each do |photo| %>
 <img src="<%= photo.images.thumbnail.url %>"/>
 <%= end %>
+</div>
+<script type="text/javascript">
+	
+	$('#magazine').bind('turned', function(e, page) {
+
+		console.log('Current view: ', $('#magazine').turn('view'));
+
+	})
+
+	$('#magazine').turn({acceleration: true, shadows: true});
+
+
+</script>
 </body>
 </html>
 
