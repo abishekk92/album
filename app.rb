@@ -4,7 +4,7 @@
 
  enable :sessions
  
- cb_url= "http://localhost:4567/oauth/callback"
+ cb_url= "http://localhost:9393/oauth/callback"
 
  Instagram.configure do |config|
 	config.client_id="03bc85df0afd49b7bc63f6ed9dd69ab5"
